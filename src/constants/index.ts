@@ -93,6 +93,9 @@ import why3 from "@/assets/why-pac/ecosystem.svg";
 import why4 from "@/assets/why-pac/integrated.svg";
 import why5 from "@/assets/why-pac/trusted.svg";
 
+import id from "@/assets/Flag_of_Indonesia.svg.webp";
+import en from "@/assets/Flag_of_the_United_States_(DoS_ECA_Color_Standard).svg";
+
 export const bgSlide1 = bg1;
 export const bgSlide2 = bg2;
 export const bgSlide3 = bg3;
@@ -187,6 +190,40 @@ export const whyPacCost = why2;
 export const whyPacEcosystem = why3;
 export const whyPacIntegrated = why4;
 export const whyPacTrusted = why5;
+
+export const indonesia = id;
+export const amerika = en;
+
+export const navBarLists = [
+  {
+    name: "nav.why",
+    path: "#",
+  },
+  {
+    name: "nav.product",
+    path: "#",
+  },
+  {
+    name: "nav.ecosystem",
+    path: "#",
+  },
+  {
+    name: "nav.fincloud",
+    path: "#",
+  },
+  {
+    name: "nav.emoney",
+    path: "#",
+  },
+  {
+    name: "nav.customer",
+    path: "#",
+  },
+  {
+    name: "nav.career",
+    path: "#",
+  },
+];
 
 export const customerImages = [
   agi,

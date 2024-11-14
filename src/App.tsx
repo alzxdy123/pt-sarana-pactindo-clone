@@ -1,11 +1,12 @@
 import { useState } from "react";
+import Navbar from "./components/common/Navbar";
+import Carousel from "./components/common/Carousel";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>test</h1>
+      <Navbar />
+      <Carousel />
     </>
   );
 }
