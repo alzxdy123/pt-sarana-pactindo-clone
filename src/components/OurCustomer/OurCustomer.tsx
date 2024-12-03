@@ -29,7 +29,15 @@ import {
 } from "@/constants";
 
 function OurCustomer() {
-  const BPD = [bali, jambi, sulselbar, bankSultra, bankNtt, bankPapua];
+  const BPD = [
+    bali,
+    jambi,
+    sulselbar,
+    bankSultra,
+    bankKalsel,
+    bankNtt,
+    bankPapua,
+  ];
   const BANK_UMUM = [
     bws,
     bss,
