@@ -2,10 +2,13 @@ import bg1 from "@/assets/bg-slide1.png";
 import bg2 from "@/assets/bg-slide2.png";
 import bg3 from "@/assets/bg-slide3.png";
 
+import logo from "@/assets/pac.png";
+
 import cimg1 from "@/assets/carousel/image1.png";
 import cimg2 from "@/assets/carousel/image2.png";
 import cimg3 from "@/assets/carousel/image3.png";
-import cimg4 from "@/assets/carousel/image4-1.png";
+import cimg4_1 from "@/assets/carousel/image4-1.png";
+import cimg4_2 from "@/assets/carousel/image4-2.png";
 import cimg5 from "@/assets/carousel/image5.png";
 
 import pw from "@/assets/logo-pac-white.svg";
@@ -54,6 +57,7 @@ import cus37 from "@/assets/customer/sulselbar.png";
 import cus38 from "@/assets/customer/supra.png";
 import cus39 from "@/assets/customer/toraja.png";
 import cus40 from "@/assets/customer/victoria.png";
+import cus41 from "@/assets/customer/bcasyariah.png";
 
 import eco1 from "@/assets/ecosystem/img-1.png";
 import eco2 from "@/assets/ecosystem/img-2.png";
@@ -87,14 +91,17 @@ import ps2 from "@/assets/product-service/other.svg";
 import ps3 from "@/assets/product-service/server-column.svg";
 import ps4 from "@/assets/product-service/server-row.png";
 
-import why1 from "@/assets/why-pac/compliance.svg";
-import why2 from "@/assets/why-pac/cost.svg";
+import why5 from "@/assets/why-pac/compliance.svg";
+import why4 from "@/assets/why-pac/cost.svg";
 import why3 from "@/assets/why-pac/ecosystem.svg";
-import why4 from "@/assets/why-pac/integrated.svg";
-import why5 from "@/assets/why-pac/trusted.svg";
+import why2 from "@/assets/why-pac/integrated.svg";
+import why1 from "@/assets/why-pac/trusted.svg";
 
 import id from "@/assets/Flag_of_Indonesia.svg.webp";
 import en from "@/assets/Flag_of_the_United_States_(DoS_ECA_Color_Standard).svg";
+
+import wppdf from "@/assets/whitepaper.pdf";
+export const whitepaperPDF = wppdf;
 
 export const bgSlide1 = bg1;
 export const bgSlide2 = bg2;
@@ -103,8 +110,11 @@ export const bgSlide3 = bg3;
 export const carouselImage1 = cimg1;
 export const carouselImage2 = cimg2;
 export const carouselImage3 = cimg3;
-export const carouselImage4 = cimg4;
+export const carouselImage4_1 = cimg4_1;
+export const carouselImage4_2 = cimg4_2;
 export const carouselImage5 = cimg5;
+
+export const pac = logo;
 
 export const pacLogoWhite = pw;
 export const pacLogoCash = pc;
@@ -152,6 +162,7 @@ export const sulselbar = cus37;
 export const supra = cus38;
 export const toraja = cus39;
 export const victoria = cus40;
+export const bcasyariah = cus41;
 
 export const ecoImage1 = eco1;
 export const ecoImage2 = eco2;
@@ -197,7 +208,7 @@ export const amerika = en;
 export const navBarLists = [
   {
     name: "nav.why",
-    path: "#",
+    path: "#whypac",
   },
   {
     name: "nav.product",
@@ -270,7 +281,7 @@ export const customerImages = [
 
 export const ecosystemImages = [eco1, eco2, eco3];
 
-export const emoneyImages = [emo1, emo2, emo3, emo4, emo5];
+export const emoneyImages = [emo3, emo4, emo5];
 
 export const fincloudIcons = [
   fin1,
@@ -293,4 +304,58 @@ export const fincloudIcons = [
 
 export const productServiceImages = [ps1, ps2, ps3, ps4];
 
-export const whyPacImages = [why1, why2, why3, why4, why5];
+export const whyPac = [
+  {
+    img: why1,
+    width: 100,
+    title: "Trusted",
+    desc: "PAC has been trusted by more than 30 banks / non-banks. Consisting of 30 banks in Indonesia, 1 bank in the Philippines, and 3 multi-finance companies in the Philippines.",
+  },
+  {
+    img: why2,
+    width: 70,
+    title: "Intergrated Solutions",
+    desc: "PAC provides an integrated solution, One platform for all front-end channels of ATM switching, Mobile Banking, Internet Banking, Cash Management systems, Laku Pandai.",
+  },
+  {
+    img: why3,
+    width: 70,
+    title: "Ecosystem",
+    desc: "PAC provides an ecosystem which includes electornic money ecosystem, Biller Ecosystem, retail ecosystem, fintech ecosystem and micro ecosystem.",
+  },
+  {
+    img: why4,
+    width: 80,
+    title: "Low Investment Costs",
+    desc: "investment costs in low PAC based on opex (Pay as you grow). OPEX based represents a core measurement of a company’s efficiency over time.",
+  },
+  {
+    img: why5,
+    width: 60,
+    title: "Compliance Infrastructure",
+    desc: "Safe according to OJK and Bank Indonesia standards. PAC is a digital banking solution equipped with a Fraud Detection System and Cyber Security.",
+  },
+];
+
+export const ProductServices = [
+  {
+    image: productServiceLaptop,
+    title: "Digital Channel",
+    path: "#",
+  },
+  {
+    image: productServiceServerRow,
+    title: "Infrastructure & Operations",
+    path: "#",
+  },
+  {
+    image: productServiceServerColumn,
+    title: "Security",
+    path: "#",
+  },
+  {
+    image: productServiceOther,
+    title: "Other Product",
+    path: "#",
+  },
+];

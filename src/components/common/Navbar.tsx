@@ -61,8 +61,8 @@ function Navbar() {
   };
 
   return (
-    <div className="flex flex-col w-full bg-transparent my-2 absolute top-0 z-50">
-      <div className="flex justify-end w-[90%] mx-auto text-white">
+    <div className="flex flex-col w-full bg-transparent py-2 pb-11 absolute top-0 z-50">
+      <div className="flex justify-end w-[90%] mx-auto text-white dark:text-slate-800">
         {t("nav.question")}{" "}
         <span className="font-bold ml-1 cursor-pointer">+6222 - 5229880</span>
       </div>
@@ -76,13 +76,13 @@ function Navbar() {
           <Link
             to={item.path}
             key={index}
-            className="text-lg font-sm h-8 flex justify-between flex-col"
+            className="text-lg font-sm h-8 flex justify-between flex-col hidden lg:block px-2"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="text-white">{t(item.name)}</div>
+            <div className="text-white dark:text-slate-800">{t(item.name)}</div>
             <div
-              className="link-animation bg-white h-4 left-0 top-full"
+              className="link-animation bg-white dark:bg-slate-800 h-1 left-0 top-full"
               style={{ width: "0%" }}
             ></div>
           </Link>
@@ -91,13 +91,13 @@ function Navbar() {
         <div className="flex gap-5">
           <ModeToggle />
 
-          <DropdownMenu>
+          {/* <DropdownMenu>
             <DropdownMenuTrigger
               asChild
-              className="bg-transparent border-none hover:bg-transparent"
+              className="bg-transparent border-slate-200 dark:border-slate-800 hover:bg-transparent"
             >
               <Button variant="outline" size="icon" className="w-11 h-11">
-                <IoLanguageSharp />
+                <IoLanguageSharp className="text-white dark:text-slate-800" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
@@ -117,16 +117,20 @@ function Navbar() {
                 </DropdownMenuRadioItem>
               </DropdownMenuRadioGroup>
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu> */}
 
           <div
             onClick={() => setNavToggle(!navToggle)}
-            className={`border-2 border-slate-200 dark:border-slate-700  rounded-md cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 lg:hidden ${
-              navToggle === true ? "dark:border-slate-200" : ""
+            className={`border-2 border-slate-200 dark:border-slate-800 text-white dark:text-slate-800 rounded-md cursor-pointer lg:hidden ${
+              navToggle === true ? "dark:bg-slate-800" : ""
             } `}
             ref={hamburgerRef}
           >
-            <GiHamburgerMenu className="text-2xl m-2" />
+            <GiHamburgerMenu
+              className={`text-2xl m-2 ${
+                navToggle === true ? "text-white" : ""
+              }`}
+            />
           </div>
         </div>
 
@@ -136,12 +140,14 @@ function Navbar() {
             className="absolute w-full bg-white dark:bg-slate-800 top-16 rounded-xl overflow-hidden"
           >
             {navBarLists.map((list) => (
-              <div
-                className="p-3 hover:bg-slate-200 dark:hover:bg-slate-700 text-lg cursor-pointer "
-                key={list.name}
-              >
-                {t(list.name)}
-              </div>
+              <a href="whypac">
+                <div
+                  className="p-3 hover:bg-slate-200 dark:hover:bg-slate-700 text-lg cursor-pointer "
+                  key={list.name}
+                >
+                  {t(list.name)}
+                </div>
+              </a>
             ))}
           </div>
         )}
