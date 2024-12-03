@@ -4,19 +4,9 @@ import { useTranslation } from "react-i18next";
 import { gsap } from "gsap";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoLanguageSharp } from "react-icons/io5";
 
-import { navBarLists, pacLogoWhite, amerika, indonesia } from "@/constants";
+import { navBarLists, pacLogoWhite } from "@/constants";
 import { ModeToggle } from "./ModeToggle";
-
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
 
 function Navbar() {
   const [navToggle, setNavToggle] = useState<boolean>(false);
