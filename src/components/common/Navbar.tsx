@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { gsap } from "gsap";
@@ -12,7 +12,7 @@ function Navbar() {
   const [navToggle, setNavToggle] = useState<boolean>(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const hamburgerRef = useRef<HTMLDivElement | null>(null);
-  const [lang, setLang] = useState(localStorage.getItem("lang") || "id");
+  const [lang] = useState(localStorage.getItem("lang") || "id");
 
   const { t, i18n } = useTranslation();
 

@@ -1,5 +1,4 @@
 import { isoLogo } from "@/constants";
-import React from "react";
 
 function Iso() {
   return (

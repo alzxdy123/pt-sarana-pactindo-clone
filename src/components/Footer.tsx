@@ -1,5 +1,4 @@
 import { pacLogoWhite } from "@/constants";
-import React from "react";
 
 function Footer() {
   return (

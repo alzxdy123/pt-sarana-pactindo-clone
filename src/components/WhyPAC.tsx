@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { whyPac, whitepaper, whitepaperPDF } from "@/constants";
 import { Button } from "./ui/button";
 import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "./ui/dialog";

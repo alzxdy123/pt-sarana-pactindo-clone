@@ -1,5 +1,4 @@
 import { saasLogo } from "@/constants";
-import React from "react";
 
 function Sass() {
   return (
