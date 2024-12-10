@@ -1,3 +1,4 @@
+import { useGSAP } from "@gsap/react";
 import ImageDisplay from "./ImageDisplay";
 
 import {
@@ -27,6 +28,7 @@ import {
   bhi,
   bankInc,
 } from "@/constants";
+import { animFromTopToBottom } from "@/utils/animations";
 
 function OurCustomer() {
   const BPD = [
@@ -59,11 +61,17 @@ function OurCustomer() {
     bankInc,
   ];
 
+  useGSAP(() => {
+    animFromTopToBottom(".text-anim");
+  });
+
   return (
-    <div className="py-5 pt-36">
-      <div className="w-[90%] mx-auto flex flex-col gap-20">
-        <div className="text-6xl font-bold text-center">Our Customer</div>
-        <p className="text-center px-20 pb-10">
+    <div className="py-5 pt-10">
+      <div className="w-[90%] mx-auto flex flex-col gap-10">
+        <div className="text-6xl font-bold text-center text-anim">
+          Our Customer
+        </div>
+        <p className="text-center px-20 pb-10 text-anim">
           Since our founding, PT. Sarana Pactindo (PAC) has quickly become
           well-known as a trusted partner of many of the bank and billers. We
           have worked closely and successfully with government departments and

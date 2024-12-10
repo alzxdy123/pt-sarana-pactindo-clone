@@ -1,23 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import Carousel from "../common/Carousel";
 import { ecoImage1, ecoImage2, ecoImage3 } from "@/constants";
-import { animateWithGsap } from "@/utils/animations";
+import { useGSAP } from "@gsap/react";
+import { animFromTopToBottom } from "@/utils/animations";
 
 function Ecosystem() {
   const slides = [ecoImage1, ecoImage2, ecoImage3];
+  const titleRef = useRef(null);
 
-  useEffect(() => {
-    animateWithGsap(".text-anim", { y: 0, opacity: 1, duration: 0.6 }, {});
-  }, []);
+  useGSAP(() => {
+    animFromTopToBottom(titleRef.current);
+  });
 
   return (
     <div className="dark:bg-slate-900 my-10">
       <div className="w-[90%] mx-auto h-screen flex flex-col py-10 ">
-        <h1
-          className="text-5xl mb-10 text-center font-bold text-anim"
-          style={{ opacity: 0, transform: "translateY(-50px)" }}
-        >
+        <h1 className="text-5xl mb-10 text-center font-bold" ref={titleRef}>
           Ecosystem
         </h1>
         <Carousel content={slides} />

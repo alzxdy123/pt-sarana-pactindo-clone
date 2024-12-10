@@ -2,7 +2,7 @@ import { isoLogo } from "@/constants";
 
 function Iso() {
   return (
-    <div className="flex justify-center items-center py-10 dark:bg-slate-900">
+    <div className="flex justify-center items-center py-32 dark:bg-slate-900">
       <div className="w-1/2 flex justify-center items-center flex-col gap-5">
         <img
           src={isoLogo}

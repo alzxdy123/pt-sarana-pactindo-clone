@@ -18,6 +18,58 @@ export const animateWithGsap = (
   });
 };
 
+export const animFromBottomToTop = (
+  target: any,
+  duration: any = 0.8,
+  stagger: any = 0.3
+) => {
+  gsap.fromTo(
+    target,
+    {
+      y: 100,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: duration,
+      ease: "power2.inOut",
+      stagger: stagger,
+      scrollTrigger: {
+        trigger: target,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    }
+  );
+};
+
+export const animFromTopToBottom = (
+  target: any,
+  duration: any = 0.8,
+  stagger: any = 0.3
+) => {
+  gsap.fromTo(
+    target,
+    {
+      y: -100,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: duration,
+      ease: "power2.inOut",
+      stagger: stagger,
+      scrollTrigger: {
+        trigger: target,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    }
+  );
+};
+
 export const animateWithGsapTimeline = (
   timeline: any,
   rotationRef: any,

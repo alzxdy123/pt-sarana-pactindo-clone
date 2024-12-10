@@ -8,7 +8,7 @@ function WhyPAC() {
   useEffect(() => {
     animateWithGsap(
       ".whypac",
-      { x: 0, opacity: 1, duration: 1.5, stagger: 1 },
+      { x: 0, opacity: 1, duration: 0.5, stagger: 0.3 },
       { start: "top 80%" }
     );
 

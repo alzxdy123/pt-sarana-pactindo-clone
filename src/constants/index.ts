@@ -205,34 +205,22 @@ export const whyPacTrusted = why5;
 export const indonesia = id;
 export const amerika = en;
 
-export const navBarLists = [
-  {
-    name: "nav.why",
-    path: "#whypac",
-  },
-  {
-    name: "nav.product",
-    path: "#",
-  },
-  {
-    name: "nav.ecosystem",
-    path: "#",
-  },
-  {
-    name: "nav.fincloud",
-    path: "#",
-  },
-  {
-    name: "nav.emoney",
-    path: "#",
-  },
-  {
-    name: "nav.customer",
-    path: "#",
-  },
+interface NavBarItem {
+  name: string;
+  path?: string;
+  link?: string;
+}
+
+export const navBarLists: NavBarItem[] = [
+  { name: "nav.why", path: "whypac" },
+  { name: "nav.product", path: "product" },
+  { name: "nav.ecosystem", path: "ecosystem" },
+  { name: "nav.fincloud", path: "fincloud" },
+  { name: "nav.emoney", path: "emoney" },
+  { name: "nav.customer", path: "ourcustomer" },
   {
     name: "nav.career",
-    path: "#",
+    link: "https://id.jobstreet.com/companies/pactindo-facilities-168556022423394",
   },
 ];
 

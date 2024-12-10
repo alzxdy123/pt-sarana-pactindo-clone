@@ -20,6 +20,14 @@ function Carousel({ content }: CarouselType) {
     setCurrentSlide(index);
   };
 
+  React.useEffect(() => {
+    const slideInterval = setInterval(() => {
+      handleNext();
+    }, 6000);
+
+    return () => clearInterval(slideInterval);
+  }, []);
+
   return (
     <div className="relative w-full h-full flex justify-center items-center overflow-hidden rounded-xl">
       {/* Slide */}

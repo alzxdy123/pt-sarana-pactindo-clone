@@ -146,7 +146,6 @@ function Carousel() {
   }, []);
 
   useEffect(() => {
-    // GSAP animation for each slide change
     const tl = gsap.timeline();
     tl.fromTo(
       slideContainerRef.current,
