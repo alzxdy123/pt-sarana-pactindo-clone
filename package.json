@@ -9,9 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "engines": {
-    "node": ">=18 <21"
-  },
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@radix-ui/react-dialog": "^1.1.2",
