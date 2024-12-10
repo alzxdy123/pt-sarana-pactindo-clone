@@ -15,20 +15,20 @@ import {
   carouselImage5,
 } from "@/constants";
 
-interface SlideImage {
-  src: string;
-  alt: string;
-  width: number;
-}
+// interface SlideImage {
+//   src: string;
+//   alt: string;
+//   width: number;
+// }
 
-interface Slide {
-  bg: string;
-  title: string;
-  description: string;
-  images?: SlideImage[];
-}
+// interface Slide {
+//   bg: string;
+//   title: string;
+//   description: string;
+//   images?: SlideImage[];
+// }
 
-const slides: Slide[] = [
+const slides = [
   {
     bg: bgSlide1,
     title: "Mobile Banking",

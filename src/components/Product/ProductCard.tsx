@@ -6,7 +6,7 @@ interface ProductCardProps {
   path: string; // URL untuk navigasi
 }
 
-function ProductCard({ image, title, path }: ProductCardProps) {
+function ProductCard({ image, title }: ProductCardProps) {
   return (
     <div className="bg-white dark:bg-black p-8 w-60 justify-between rounded-3xl flex flex-col h-full items-center">
       <img

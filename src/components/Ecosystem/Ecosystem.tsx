@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 import Carousel from "../common/Carousel";
 import { ecoImage1, ecoImage2, ecoImage3 } from "@/constants";
