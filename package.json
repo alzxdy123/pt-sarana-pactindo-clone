@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18 <21"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
