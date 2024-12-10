@@ -1,3 +1,9 @@
+interface SlideImage {
+  src: any;
+  alt: any;
+  width: any;
+}
+
 interface SlideContentProps {
   title: string;
   description: string;
