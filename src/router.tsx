@@ -7,6 +7,12 @@ const router = createBrowserRouter([
       Component: (await import("@/App")).default,
     }),
   },
+  {
+    path: "/fincloud",
+    lazy: async () => ({
+      Component: (await import("@/pages/Fincloud")).default,
+    }),
+  },
 ]);
 
 export default router;

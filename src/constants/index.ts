@@ -209,13 +209,14 @@ interface NavBarItem {
   name: string;
   path?: string;
   link?: string;
+  isRouterLink?: any;
 }
 
 export const navBarLists: NavBarItem[] = [
   { name: "nav.why", path: "whypac" },
   { name: "nav.product", path: "product" },
   { name: "nav.ecosystem", path: "ecosystem" },
-  { name: "nav.fincloud", path: "fincloud" },
+  { name: "nav.fincloud", path: "/fincloud", isRouterLink: true },
   { name: "nav.emoney", path: "emoney" },
   { name: "nav.customer", path: "ourcustomer" },
   {

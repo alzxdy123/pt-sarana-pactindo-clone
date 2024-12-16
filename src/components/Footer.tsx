@@ -1,10 +1,21 @@
+import React from "react";
 import { pacLogoWhite } from "@/constants";
+import { useNavigate } from "react-router-dom"; // Gunakan useNavigate untuk navigasi
 
 function Footer() {
+  const navigate = useNavigate(); // Hook untuk navigasi
+
   return (
     <div className="bg-[#063757] w-full py-10">
       <div className="w-[80%] mx-auto flex flex-col md:flex-row text-white gap-10">
-        <img src={pacLogoWhite} width={90} alt="PAC" />
+        {/* Logo dengan navigasi */}
+        <img
+          src={pacLogoWhite}
+          width={90}
+          alt="PAC"
+          className="cursor-pointer"
+          onClick={() => navigate("/")} // Navigasi ke halaman "/"
+        />
 
         <div className="flex gap-2 flex-col">
           <p className="text-xl font-bold">PT. Sarana Pactindo</p>
